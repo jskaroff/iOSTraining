@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23E4DB371C04AB3D005B893A /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E4DB361C04AB3D005B893A /* Vehicle.m */; settings = {ASSET_TAGS = (); }; };
+		23E4DB3A1C04AEF8005B893A /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E4DB391C04AEF8005B893A /* Car.m */; settings = {ASSET_TAGS = (); }; };
 		23EEC7B01BFE0FBA003ECA85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EEC7AF1BFE0FBA003ECA85 /* main.m */; };
 		23EEC7B31BFE0FBA003ECA85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EEC7B21BFE0FBA003ECA85 /* AppDelegate.m */; };
 		23EEC7B61BFE0FBA003ECA85 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EEC7B51BFE0FBA003ECA85 /* ViewController.m */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23E4DB351C04AB3D005B893A /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
+		23E4DB361C04AB3D005B893A /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
+		23E4DB381C04AEF8005B893A /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		23E4DB391C04AEF8005B893A /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		23EEC7AB1BFE0FBA003ECA85 /* iOSTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23EEC7AF1BFE0FBA003ECA85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		23EEC7B11BFE0FBA003ECA85 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +111,10 @@
 				23EEC7B21BFE0FBA003ECA85 /* AppDelegate.m */,
 				23EEC7B41BFE0FBA003ECA85 /* ViewController.h */,
 				23EEC7B51BFE0FBA003ECA85 /* ViewController.m */,
+				23E4DB351C04AB3D005B893A /* Vehicle.h */,
+				23E4DB361C04AB3D005B893A /* Vehicle.m */,
+				23E4DB381C04AEF8005B893A /* Car.h */,
+				23E4DB391C04AEF8005B893A /* Car.m */,
 				23EEC7B71BFE0FBA003ECA85 /* Main.storyboard */,
 				23EEC7BA1BFE0FBA003ECA85 /* Assets.xcassets */,
 				23EEC7BC1BFE0FBA003ECA85 /* LaunchScreen.storyboard */,
@@ -270,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23E4DB3A1C04AEF8005B893A /* Car.m in Sources */,
+				23E4DB371C04AB3D005B893A /* Vehicle.m in Sources */,
 				23EEC7B61BFE0FBA003ECA85 /* ViewController.m in Sources */,
 				23EEC7B31BFE0FBA003ECA85 /* AppDelegate.m in Sources */,
 				23EEC7B01BFE0FBA003ECA85 /* main.m in Sources */,
@@ -498,6 +510,7 @@
 				23EEC7DA1BFE0FBA003ECA85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23EEC7DB1BFE0FBA003ECA85 /* Build configuration list for PBXNativeTarget "iOSTrainingTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +519,7 @@
 				23EEC7DD1BFE0FBA003ECA85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23EEC7DE1BFE0FBA003ECA85 /* Build configuration list for PBXNativeTarget "iOSTrainingUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +528,7 @@
 				23EEC7E01BFE0FBA003ECA85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
