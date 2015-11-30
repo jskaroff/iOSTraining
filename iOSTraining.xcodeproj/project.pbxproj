@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23E4DB371C04AB3D005B893A /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E4DB361C04AB3D005B893A /* Vehicle.m */; settings = {ASSET_TAGS = (); }; };
-		23E4DB3A1C04AEF8005B893A /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E4DB391C04AEF8005B893A /* Car.m */; settings = {ASSET_TAGS = (); }; };
+		23E27CC51C0CF428005992CB /* Computer.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E27CC41C0CF428005992CB /* Computer.m */; };
+		23E27CC81C0CFD7A005992CB /* ArmComputer.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E27CC71C0CFD7A005992CB /* ArmComputer.m */; };
+		23E27CCB1C0CFDED005992CB /* iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E27CCA1C0CFDED005992CB /* iPhone.m */; };
+		23E4DB371C04AB3D005B893A /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E4DB361C04AB3D005B893A /* Vehicle.m */; };
+		23E4DB3A1C04AEF8005B893A /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E4DB391C04AEF8005B893A /* Car.m */; };
 		23EEC7B01BFE0FBA003ECA85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EEC7AF1BFE0FBA003ECA85 /* main.m */; };
 		23EEC7B31BFE0FBA003ECA85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EEC7B21BFE0FBA003ECA85 /* AppDelegate.m */; };
 		23EEC7B61BFE0FBA003ECA85 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EEC7B51BFE0FBA003ECA85 /* ViewController.m */; };
@@ -37,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23E27CC31C0CF428005992CB /* Computer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Computer.h; sourceTree = "<group>"; };
+		23E27CC41C0CF428005992CB /* Computer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Computer.m; sourceTree = "<group>"; };
+		23E27CC61C0CFD7A005992CB /* ArmComputer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArmComputer.h; sourceTree = "<group>"; };
+		23E27CC71C0CFD7A005992CB /* ArmComputer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArmComputer.m; sourceTree = "<group>"; };
+		23E27CC91C0CFDED005992CB /* iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhone.h; sourceTree = "<group>"; };
+		23E27CCA1C0CFDED005992CB /* iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhone.m; sourceTree = "<group>"; };
 		23E4DB351C04AB3D005B893A /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
 		23E4DB361C04AB3D005B893A /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
 		23E4DB381C04AEF8005B893A /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
@@ -115,6 +124,12 @@
 				23E4DB361C04AB3D005B893A /* Vehicle.m */,
 				23E4DB381C04AEF8005B893A /* Car.h */,
 				23E4DB391C04AEF8005B893A /* Car.m */,
+				23E27CC31C0CF428005992CB /* Computer.h */,
+				23E27CC41C0CF428005992CB /* Computer.m */,
+				23E27CC61C0CFD7A005992CB /* ArmComputer.h */,
+				23E27CC71C0CFD7A005992CB /* ArmComputer.m */,
+				23E27CC91C0CFDED005992CB /* iPhone.h */,
+				23E27CCA1C0CFDED005992CB /* iPhone.m */,
 				23EEC7B71BFE0FBA003ECA85 /* Main.storyboard */,
 				23EEC7BA1BFE0FBA003ECA85 /* Assets.xcassets */,
 				23EEC7BC1BFE0FBA003ECA85 /* LaunchScreen.storyboard */,
@@ -280,11 +295,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23E27CC51C0CF428005992CB /* Computer.m in Sources */,
 				23E4DB3A1C04AEF8005B893A /* Car.m in Sources */,
 				23E4DB371C04AB3D005B893A /* Vehicle.m in Sources */,
 				23EEC7B61BFE0FBA003ECA85 /* ViewController.m in Sources */,
 				23EEC7B31BFE0FBA003ECA85 /* AppDelegate.m in Sources */,
 				23EEC7B01BFE0FBA003ECA85 /* main.m in Sources */,
+				23E27CCB1C0CFDED005992CB /* iPhone.m in Sources */,
+				23E27CC81C0CFD7A005992CB /* ArmComputer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
