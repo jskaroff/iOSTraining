@@ -10,13 +10,15 @@
 
 @implementation iPhone
 
--(void) setupComputerValues {
+-(void)setupComputerValues {
+    [super setupComputerValues];
+    
     self.make = @"Apple";
     self.model = @"iPhone 6";
     
     self.numberOfCPUs = 2;
     self.numberOfGPUs = 4;
-    self.megabytesOfMemory = 1028;
+    self.megabytesOfMemory = 1024;
     self.megabytesOfStorage = 64 * 1024;
     
     self.hasWifi = YES;

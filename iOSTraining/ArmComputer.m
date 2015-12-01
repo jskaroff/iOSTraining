@@ -10,7 +10,9 @@
 
 @implementation ArmComputer
 
-- (void) setupComputerValues {
+- (void)setupComputerValues {
+    
+    [super setupComputerValues];
     self.cpuArchitecture = @"ARM";
     
 }

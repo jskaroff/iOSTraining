@@ -10,10 +10,10 @@
 
 @implementation Computer
 
-- (void) setupComputerValues {
+- (void)setupComputerValues {
     self.make = nil;
     self.model = nil;
-    self.model = nil;
+    self.name = nil;
     self.cpuArchitecture = nil;
     
     self.numberOfCPUs = 0;
