@@ -25,7 +25,6 @@
     self.hasUsb = NO;
     self.hasWifi = NO;
     
-    
 }
 
 @end
