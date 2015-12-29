@@ -8,56 +8,55 @@
 
 #import "ViewController.h"
 
-// private category
 @interface ViewController ()
 
-@property (nonatomic, strong) UILabel *lbl;
+@property (nonatomic, strong) UILabel *label;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
     
-    self.lbl = [[UILabel alloc] initWithFrame:CGRectMake(20, 50, 200, 50)];
-    self.lbl.text = @"This is my text. Some more text goes here.";
-    self.lbl.backgroundColor = [UIColor lightGrayColor];
-    [self.lbl sizeToFit];
-    [self.view addSubview:self.lbl];
+    self.label = [[UILabel alloc] initWithFrame:(CGRectMake(self.view.center.x, self.view.center.y, 50.0, 10.0))];
+    self.label.text = @"Hello World";
+    self.label.backgroundColor = [UIColor lightGrayColor];
+    self.label.numberOfLines = 0;
+    self.label.lineBreakMode = NSLineBreakByWordWrapping;
+    
+    [self.label sizeToFit];
+    self.label.center = self.view.center;
+    [self.view addSubview:self.label];
     
     UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [btn1 setTitle:@"Text 1" forState:UIControlStateNormal];
-    // addTarget:self means that system will look for selector in this class
+    [btn1 setTitle:@"Blue" forState:(UIControlStateNormal)];
     [btn1 addTarget:self action:@selector(btnTouched:) forControlEvents:UIControlEventTouchUpInside];
     [btn1 sizeToFit];
-    btn1.center = self.view.center;
+    btn1.center = CGPointMake(self.label.center.x, self.label.center.y + 25.0);
+    btn1.layer.borderWidth = 2.0;
+    btn1.layer.borderColor = [UIColor blueColor].CGColor;
     [self.view addSubview:btn1];
     
-    UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [btn2 setTitle:@"Button 2" forState:UIControlStateNormal];
-    [btn2 addTarget:self action:@selector(btnTouched:) forControlEvents:UIControlEventTouchUpInside];
-    [btn2 sizeToFit];
-    btn2.center = CGPointMake(btn1.center.x, CGRectGetMaxY(btn1.frame) + 20.0);
-    [self.view addSubview:btn2];
-    
-    UIButton *btn3 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [btn3 setTitle:@"Button 3" forState:UIControlStateNormal];
-    [btn3 addTarget:self action:@selector(btnTouched:) forControlEvents:UIControlEventTouchUpInside];
-    [btn3 sizeToFit];
-    btn3.center = CGPointMake(btn2.center.x, CGRectGetMaxY(btn2.frame) + 20.0);
-    [self.view addSubview:btn3];
-    
+    CGRect frame = btn1.frame;
+    frame.size.width = frame.size.width + 20.0;
+    frame.size.height += 20.0;
+    btn1.frame = frame;
 }
 
-// selector has default param of sending object
-// id is generic type
-- (void)btnTouched:(id) sender {
-    NSLog(@"sender = %@", sender);
+- (void) btnTouched:(id) sender {
     UIButton *btn = (UIButton *)sender;
-    NSString *btnTitle = btn.titleLabel.text;
+    NSString *btnLabel = btn.titleLabel.text;
     
-    self.lbl.text = btnTitle;
+    NSLog(btnLabel);
     
+    self.label.text = btnLabel;
+    [self.label sizeToFit];
+    
+    CGRect frame = self.label.frame;
+    frame.size.width = 320.0;
+    self.label.frame = frame;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -66,3 +65,5 @@
 }
 
 @end
+
+
