@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "iOSTraining-Swift.h"
 
 @interface ViewController ()
 
@@ -77,7 +78,8 @@
 }
 
 - (void) btnSwiftTouched:(id) sender {
-    
+    UIViewController *swiftViewController = [SwiftViewController new];
+    [self.navigationController pushViewController:swiftViewController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
