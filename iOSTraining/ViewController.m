@@ -23,8 +23,11 @@
     self.label = [[UILabel alloc] initWithFrame:(CGRectMake(self.view.center.x, self.view.center.y, 50.0, 10.0))];
     self.label.text = @"Hello World";
     self.label.backgroundColor = [UIColor lightGrayColor];
-    self.label.numberOfLines = 0;
+    self.label.numberOfLines = 0; // 0 = take up as many lines as you have text for
     self.label.lineBreakMode = NSLineBreakByWordWrapping;
+    
+    // self.label.numberOfLines = 1;
+    // self.label.lineBreakMode = NSLineBreakByTruncatingTail;
     
     [self.label sizeToFit];
     self.label.center = self.view.center;
