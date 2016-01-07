@@ -78,6 +78,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23C853E51C3EAB4B00E9332F /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SwiftUI;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		23C853E61C3EAB7000E9332F /* Obj-CUI */ = {
+			isa = PBXGroup;
+			children = (
+				23EEC7B11BFE0FBA003ECA85 /* AppDelegate.h */,
+				23EEC7B21BFE0FBA003ECA85 /* AppDelegate.m */,
+				23EEC7B41BFE0FBA003ECA85 /* ViewController.h */,
+				23EEC7B51BFE0FBA003ECA85 /* ViewController.m */,
+			);
+			name = "Obj-CUI";
+			sourceTree = "<group>";
+		};
 		23EEC7A21BFE0FBA003ECA85 = {
 			isa = PBXGroup;
 			children = (
@@ -101,15 +120,13 @@
 		23EEC7AD1BFE0FBA003ECA85 /* iOSTraining */ = {
 			isa = PBXGroup;
 			children = (
-				23EEC7B11BFE0FBA003ECA85 /* AppDelegate.h */,
-				23EEC7B21BFE0FBA003ECA85 /* AppDelegate.m */,
-				23EEC7B41BFE0FBA003ECA85 /* ViewController.h */,
-				23EEC7B51BFE0FBA003ECA85 /* ViewController.m */,
+				23C853E61C3EAB7000E9332F /* Obj-CUI */,
 				23EEC7B71BFE0FBA003ECA85 /* Main.storyboard */,
 				23EEC7BA1BFE0FBA003ECA85 /* Assets.xcassets */,
 				23EEC7BC1BFE0FBA003ECA85 /* LaunchScreen.storyboard */,
 				23EEC7BF1BFE0FBA003ECA85 /* Info.plist */,
 				23EEC7AE1BFE0FBA003ECA85 /* Supporting Files */,
+				23C853E51C3EAB4B00E9332F /* SwiftUI */,
 			);
 			path = iOSTraining;
 			sourceTree = "<group>";
@@ -498,6 +515,7 @@
 				23EEC7DA1BFE0FBA003ECA85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23EEC7DB1BFE0FBA003ECA85 /* Build configuration list for PBXNativeTarget "iOSTrainingTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +524,7 @@
 				23EEC7DD1BFE0FBA003ECA85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23EEC7DE1BFE0FBA003ECA85 /* Build configuration list for PBXNativeTarget "iOSTrainingUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +533,7 @@
 				23EEC7E01BFE0FBA003ECA85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
