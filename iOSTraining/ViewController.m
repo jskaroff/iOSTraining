@@ -46,6 +46,20 @@
     frame.size.width = frame.size.width + 20.0;
     frame.size.height += 20.0;
     btn1.frame = frame;
+    
+    UIButton *btnSwift = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [btnSwift setTitle:@"Start Swift" forState:(UIControlStateNormal)];
+    [btnSwift addTarget:self action:@selector(btnSwiftTouched:) forControlEvents:UIControlEventTouchUpInside];
+    [btnSwift sizeToFit];
+    btnSwift.center = CGPointMake(CGRectGetMaxX(btn1.frame), btn1.center.y + 50.0);
+    btnSwift.layer.borderWidth = 2.0;
+    btnSwift.layer.borderColor = [UIColor grayColor].CGColor;
+    [self.view addSubview:btnSwift];
+    
+    CGRect frame2 = btnSwift.frame;
+    frame2.size.width += 20.0;
+    frame2.size.height += 20.0;
+    btnSwift.frame = frame2;
 }
 
 - (void) btnTouched:(id) sender {
@@ -60,6 +74,10 @@
     CGRect frame = self.label.frame;
     frame.size.width = 320.0;
     self.label.frame = frame;
+}
+
+- (void) btnSwiftTouched:(id) sender {
+    
 }
 
 - (void)didReceiveMemoryWarning {

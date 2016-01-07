@@ -1,5 +1,5 @@
 //
-//  SwfitViewController.swift
+//  SwiftViewController.swift
 //  iOSTraining
 //
 //  Created by Joshua Skaroff on 1/7/16.
