@@ -79,7 +79,9 @@
 
 - (void) btnSwiftTouched:(id) sender {
     UIViewController *swiftViewController = [SwiftViewController new];
-    [self.navigationController pushViewController:swiftViewController animated:YES];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:swiftViewController];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
