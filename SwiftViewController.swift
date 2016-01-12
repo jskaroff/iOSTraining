@@ -30,10 +30,18 @@ class SwiftViewController: UIViewController {
         let button1 = UIButton()
         button1.frame = CGRectMake(self.view.center.x, self.view.center.y, 5.0, 5.0)
         button1.backgroundColor = .redColor()
-        button1.setTitle("Reset", forState: UIControlState.Normal)
+        button1.setTitle("Dismiss", forState: UIControlState.Normal)
         button1.sizeToFit()
         button1.addTarget(self, action: "buttonTouched:", forControlEvents: .TouchUpInside)
         self.view.addSubview(button1)
+        
+        let buttonObjC = UIButton()
+        buttonObjC.frame = CGRectMake(self.view.center.x + 75.0 , self.view.center.y, 5.0, 5.0)
+        buttonObjC.backgroundColor = .greenColor()
+        buttonObjC.setTitle("Push", forState: .Normal)
+        buttonObjC.sizeToFit()
+        buttonObjC.addTarget(self, action: "buttonTouchedObjC:", forControlEvents: .TouchUpInside)
+        self.view.addSubview(buttonObjC)
         
         //self.textField: UITextField = UITextField()
         self.textField.frame = CGRectMake(10.0, self.view.frame.height - 50.0, self.view.frame.width - 150, 40.0)
@@ -43,19 +51,31 @@ class SwiftViewController: UIViewController {
         let buttonUpdate = UIButton()
         buttonUpdate.frame = CGRectMake(self.view.center.x + textField.frame.width / 2, self.view.frame.height - 50.0, 100.0, 5.0)
         buttonUpdate.backgroundColor = .grayColor()
+        buttonUpdate.layer.borderColor = UIColor.blackColor().CGColor
+        buttonUpdate.layer.cornerRadius = 3
+        buttonUpdate.layer.borderWidth = 1
         buttonUpdate.setTitle("GO", forState: .Normal)
         buttonUpdate.sizeToFit()
         buttonUpdate.addTarget(self, action: "updateLabel:", forControlEvents: .TouchUpInside)
         self.view.addSubview(buttonUpdate)
-    }
-    
-    
-    func buttonTouched(sender: UIButton!)
-    {
+        
         
     }
     
-    func updateLabel(sender: UIButton!)
+    
+    func buttonTouched(sender: UIButton)
+    {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func buttonTouchedObjC(sender: UIButton)
+    {
+        let vc = ViewController()
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func updateLabel(sender: UIButton)
     {
         self.label1.text = self.textField.text
     }

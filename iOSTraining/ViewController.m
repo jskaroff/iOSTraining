@@ -19,7 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor whiteColor];
     
     self.label = [[UILabel alloc] initWithFrame:(CGRectMake(self.view.center.x, self.view.center.y, 50.0, 10.0))];
     self.label.text = @"Hello World";
