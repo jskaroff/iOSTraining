@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230C27821C4E7A580009A440 /* ViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230C27811C4E7A580009A440 /* ViewTest.swift */; };
 		23C853E91C3EAC5800E9332F /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C853E81C3EAC5800E9332F /* SwiftViewController.swift */; };
 		23EEC7B01BFE0FBA003ECA85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EEC7AF1BFE0FBA003ECA85 /* main.m */; };
 		23EEC7B31BFE0FBA003ECA85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EEC7B21BFE0FBA003ECA85 /* AppDelegate.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		230C27801C4E7A570009A440 /* iOSTrainingUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSTrainingUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		230C27811C4E7A580009A440 /* ViewTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTest.swift; sourceTree = "<group>"; };
 		23C853E71C3EAC5800E9332F /* iOSTraining-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSTraining-Bridging-Header.h"; sourceTree = "<group>"; };
 		23C853E81C3EAC5800E9332F /* SwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 		23EEC7AB1BFE0FBA003ECA85 /* iOSTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +161,8 @@
 			children = (
 				23EEC7D31BFE0FBA003ECA85 /* iOSTrainingUITests.m */,
 				23EEC7D51BFE0FBA003ECA85 /* Info.plist */,
+				230C27811C4E7A580009A440 /* ViewTest.swift */,
+				230C27801C4E7A570009A440 /* iOSTrainingUITests-Bridging-Header.h */,
 			);
 			path = iOSTrainingUITests;
 			sourceTree = "<group>";
@@ -312,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				230C27821C4E7A580009A440 /* ViewTest.swift in Sources */,
 				23EEC7D41BFE0FBA003ECA85 /* iOSTrainingUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,10 +493,13 @@
 		23EEC7DF1BFE0FBA003ECA85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = iOSTrainingUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.urbn.iOSTrainingUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSTrainingUITests/iOSTrainingUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_TARGET_NAME = iOSTraining;
 				USES_XCTRUNNER = YES;
 			};
@@ -499,10 +508,12 @@
 		23EEC7E01BFE0FBA003ECA85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = iOSTrainingUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.urbn.iOSTrainingUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOSTrainingUITests/iOSTrainingUITests-Bridging-Header.h";
 				TEST_TARGET_NAME = iOSTraining;
 				USES_XCTRUNNER = YES;
 			};
