@@ -126,12 +126,12 @@
 				23EEC7B11BFE0FBA003ECA85 /* AppDelegate.h */,
 				23EEC7B21BFE0FBA003ECA85 /* AppDelegate.m */,
 				23C853E61C3EAB7000E9332F /* Obj-CUI */,
+				23C853E51C3EAB4B00E9332F /* SwiftUI */,
 				23EEC7B71BFE0FBA003ECA85 /* Main.storyboard */,
 				23EEC7BA1BFE0FBA003ECA85 /* Assets.xcassets */,
 				23EEC7BC1BFE0FBA003ECA85 /* LaunchScreen.storyboard */,
 				23EEC7BF1BFE0FBA003ECA85 /* Info.plist */,
 				23EEC7AE1BFE0FBA003ECA85 /* Supporting Files */,
-				23C853E51C3EAB4B00E9332F /* SwiftUI */,
 			);
 			path = iOSTraining;
 			sourceTree = "<group>";
