@@ -17,6 +17,12 @@ class SwiftViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let scrollView = UIScrollView()
+        scrollView.frame = view.frame
+        scrollView.backgroundColor = .redColor()
+        view.addSubview(scrollView)
+        
+        
         view.backgroundColor = UIColor.whiteColor()
         
         self.label1.frame = CGRectMake(10.0, 100.0, 50.0, 10.0)
@@ -24,7 +30,7 @@ class SwiftViewController: UIViewController {
         //self.label1.backgroundColor = UIColor.darkGrayColor()
         self.label1.text = "Welcome to the exciting world of Swift!"
         self.label1.sizeToFit()
-        self.view.addSubview(self.label1)
+        scrollView.addSubview(self.label1)
         
         
         let button1 = UIButton()
@@ -33,7 +39,7 @@ class SwiftViewController: UIViewController {
         button1.setTitle("Dismiss", forState: UIControlState.Normal)
         button1.sizeToFit()
         button1.addTarget(self, action: "buttonTouched:", forControlEvents: .TouchUpInside)
-        self.view.addSubview(button1)
+        scrollView.addSubview(button1)
         
         let buttonObjC = UIButton()
         buttonObjC.frame = CGRectMake(self.view.center.x + 75.0 , self.view.center.y, 5.0, 5.0)
@@ -41,12 +47,12 @@ class SwiftViewController: UIViewController {
         buttonObjC.setTitle("Push", forState: .Normal)
         buttonObjC.sizeToFit()
         buttonObjC.addTarget(self, action: "buttonTouchedObjC:", forControlEvents: .TouchUpInside)
-        self.view.addSubview(buttonObjC)
+        scrollView.addSubview(buttonObjC)
         
-        //self.textField: UITextField = UITextField()
+        //self.textField = UITextField()
         self.textField.frame = CGRectMake(10.0, self.view.frame.height - 50.0, self.view.frame.width - 150, 40.0)
         self.textField.backgroundColor = .lightGrayColor()
-        self.view.addSubview(self.textField)
+        scrollView.addSubview(self.textField)
         
         let buttonUpdate = UIButton()
         buttonUpdate.frame = CGRectMake(self.view.center.x + textField.frame.width / 2, self.view.frame.height - 50.0, 100.0, 5.0)
@@ -57,7 +63,7 @@ class SwiftViewController: UIViewController {
         buttonUpdate.setTitle("GO", forState: .Normal)
         buttonUpdate.sizeToFit()
         buttonUpdate.addTarget(self, action: "updateLabel:", forControlEvents: .TouchUpInside)
-        self.view.addSubview(buttonUpdate)
+        scrollView.addSubview(buttonUpdate)
         
         
     }

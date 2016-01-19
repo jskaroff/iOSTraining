@@ -41,9 +41,10 @@ class ViewTest: XCTestCase {
         
         let myString: String = "Hello World"
         textField.typeText(myString)
+        
         app.buttons["GO"].tap()
         
-        //XCTAssert(textField.value as! String == myString)
+        XCTAssert(textField.value as! String == myString)
         app.buttons["Dismiss"].tap()
         app.staticTexts["Hello World"].tap()
         
